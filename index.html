@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <title>Quiz Homework 4</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            <div id="leaderboard">View Leaderboard</div>
+            <div class="container">
+                <h1 id="timer">
+                    <div class="seconds">0
+                    </div>
+                </h1>
+            </div>
+        </h1>
+    </div>
+    <div class="row content-center mt-4">
+        <div class="col-8" id="startQuiz">
+            <div class="card" style="width: 600px;">
+                <div class="card-body">
+                    <h1 class="card-title">Quiz</h1>
+                    <p class="card-text">
+                        You have 75 seconds to flex your knowledge. Wrong answers mean less time. Good luck champ
+                    </p>
+                    <button class="btn btn-primary" id="startButton">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="quizQues">
+            <h2 class="card-title" id="quesNum">
+                <p class="card-text" id="quesInfo">
+                    <ul class="list-group" id="answerQues">
+                        <li class="list-group-item" id="option1" name="1"></li>
+                        <li class="list-group-item" id="option2" name="2"></li>
+                        <li class="list-group-item" id="option3" name="3"></li>
+                        <li class="list-group-item" id="option4" name="4"></li>
+                    </ul>
+                </p>
+            </h2>
+        </div>
+    </div>
+    <div class="container">
+        <div id="endInfo">
+            <form class="form">
+                <div class="row">
+                    <p>
+                        Your score is: <span id="endGame"></span>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="initial">Enter Your Initials</label>
+                    <input id="initials">
+                </div>
+                <button class="btn btn-primary" id="submitButton">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div id="leaderboardLadder">
+            <div class="card">
+                <div class="card-title">Leaderboard</div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
