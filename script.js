@@ -1,20 +1,20 @@
-const timer = document.getElementById("#timer")
-const leaderboard = document.getElementById("#leaderboard")
-const startQuiz = document.getElementById("#startQuiz")
-const startButton = document.getElementById("#startButton")
-const quizQues = document.getElementById("#quizQues")
-const quesNum = document.getElementById("#quesNum")
-const quesInfo = document.getElementById("#quesInfo")
-const answerQues = document.getElementById("#answerQues")
-const firstOption = document.getElementById("#option1")
-const secondOption = document.getElementById("#option2")
-const thirdOption = document.getElementById("#option3")
-const fourthOption = document.getElementById("#option4")
-const endGame = document.getElementById("#endGame")
-const initialLetters = document.getElementById("#initialLetters")
-const endInfo = document.getElementById("#endInfo")
-const leaderboardLadder = document.getElementById("#leaderboardLadder")
-const submitButton = document.getElementById("#submitButton")
+const timer = document.getElementById("timer")
+const leaderboard = document.getElementById("leaderboard")
+const startQuiz = document.getElementById("startQuiz")
+const startButton = document.getElementById("startButton")
+const quizQues = document.getElementById("quizQues")
+const quesNum = document.getElementById("quesNum")
+const quesInfo = document.getElementById("quesInfo")
+const answerQues = document.getElementById("answerQues")
+const option1 = document.getElementById("option1")
+const option2 = document.getElementById("option2")
+const option3 = document.getElementById("option3")
+const option4 = document.getElementById("option4")
+const endGame = document.getElementById("endGame")
+const initialLetters = document.getElementById("initialLetters")
+const endInfo = document.getElementById("endInfo")
+const leaderboardLadder = document.getElementById("leaderboardLadder")
+const submitButton = document.getElementById("submitButton")
 
 
 const myQues = [
@@ -153,7 +153,7 @@ function timerQ(){
   interval = setInterval(function(){
       timeChange();
       if (secondsLeft < 1){
-          quizFinishedScreen(totalPoints);
+          endInfo(totalPoints);
       }
       secondsLeft--;
   }, 1000);
@@ -163,7 +163,7 @@ function timeChange(){
 }
 function switchScreen(screenShow){
   switch (screenShow) {
-    case 'begin':
+        case 'begin':
             startQuiz.style.display = "block";
             quizQues.style.display = "none";
             endInfo.style.display = "none";
