@@ -125,7 +125,7 @@ function quiz(event) {
     if (currentQuestion > 9) {
       doneQuiz(totalPoints);
     }
-    else if (selection === rightAnswer) {
+    else if (selection = rightAnswer) {
       totalPoints += 25;
       alert("You guessed right")
       displayQuestion(currentQuestion);
